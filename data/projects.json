@@ -1,0 +1,57 @@
+[
+    {
+        "title": "PyFlow",
+        "description": "Logic-focused programming project emphasizing structured flow and visual algorithm representation.",
+        "concepts": [
+            "Python",
+            "Algorithms",
+            "Flow Control"
+        ]
+    },
+    {
+        "title": "To-Do List Application",
+        "description": "Web-based task management application demonstrating frontend logic, DOM manipulation, and efficient state management.",
+        "concepts": [
+            "HTML5",
+            "CSS3",
+            "JavaScript"
+        ]
+    },
+    {
+        "title": "Financial AI Chatbot",
+        "description": "AI-based chatbot focusing on conversational prompt logic and financial data processing.",
+        "concepts": [
+            "AI/LLM",
+            "Python",
+            "Prompt Engineering"
+        ]
+    },
+    {
+        "title": "Sudoku Puzzle Solver",
+        "description": "High-performance backtracking and recursion-based solver for complex Sudoku grids.",
+        "concepts": [
+            "C++",
+            "Recursion",
+            "Backtracking"
+        ]
+    },
+    {
+        "title": "CGPA Calculator",
+        "description": "Academic calculation tool with robust input validation and precise grading logic.",
+        "concepts": [
+            "C++",
+            "Input Validation",
+            "Math Logic"
+        ]
+    },
+    {
+        "title": "Banking System Application",
+        "description": "Console-based banking system demonstrating Object-Oriented Programming principles including inheritance and encapsulation.",
+        "concepts": [
+            "C++",
+            "Java",
+            "OOP",
+            "System Design"
+        ]
+    }
+]
