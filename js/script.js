@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Typing Effect for Hero Subtitle
     const subtitle = document.querySelector('.hero-subtitle');
     if (subtitle) {
-        typeEffect(subtitle, "Computer Science Student | Software Developer");
+        typeEffect(subtitle, "Computer Science Student | Aspiring Software Developer");
     }
 
     // Load Projects

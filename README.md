@@ -1,6 +1,6 @@
 # 🌿 Isha Javed | Earthy Harmony Portfolio
 
-A premium, interactive, and high-performance portfolio website built for **Isha Javed**, a Computer Science student and Software Developer. This project showcases a blend of modern web aesthetics with clean, efficient code, featuring a bespoke **Earthy Harmony** design system.
+A premium, interactive, and high-performance portfolio website built for **Isha Javed**, a Computer Science student and Aspiring Software Developer. This project showcases a blend of modern web aesthetics with clean, efficient code, featuring a bespoke **Earthy Harmony** design system.
 
 ---
 
