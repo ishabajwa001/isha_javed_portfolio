@@ -50,7 +50,7 @@ function initParticles() {
             this.size = Math.random() * 2 + 0.1; // Small delicate particles
             this.speedX = (Math.random() * 1 - 0.5) * 0.5; // Slow movement
             this.speedY = (Math.random() * 1 - 0.5) * 0.5;
-            this.color = 'rgba(169, 146, 112, 0.3)'; // Gold color
+            this.color = 'rgba(210, 196, 158, 0.4)'; // Sand color from Earthy Harmony palette
         }
         update() {
             this.x += this.speedX;
@@ -109,35 +109,57 @@ function typeEffect(element, text) {
 }
 
 
-async function loadProjects() {
+const projectData = [
+    {
+        "title": "PyFlow",
+        "description": "Logic-focused programming project emphasizing structured flow and visual algorithm representation.",
+        "concepts": ["Python", "Algorithms", "Flow Control"]
+    },
+    {
+        "title": "To-Do List Application",
+        "description": "Web-based task management application demonstrating frontend logic, DOM manipulation, and efficient state management.",
+        "concepts": ["HTML5", "CSS3", "JavaScript"]
+    },
+    {
+        "title": "Financial AI Chatbot",
+        "description": "AI-based chatbot focusing on conversational prompt logic and financial data processing.",
+        "concepts": ["AI/LLM", "Python", "Prompt Engineering"]
+    },
+    {
+        "title": "Sudoku Puzzle Solver",
+        "description": "High-performance backtracking and recursion-based solver for complex Sudoku grids.",
+        "concepts": ["C++", "Recursion", "Backtracking"]
+    },
+    {
+        "title": "CGPA Calculator",
+        "description": "Academic calculation tool with robust input validation and precise grading logic.",
+        "concepts": ["C++", "Input Validation", "Math Logic"]
+    },
+    {
+        "title": "Banking System Application",
+        "description": "Console-based banking system demonstrating Object-Oriented Programming principles including inheritance and encapsulation.",
+        "concepts": ["C++", "Java", "OOP", "System Design"]
+    }
+];
+
+function loadProjects() {
     const projectsContainer = document.querySelector('.projects-grid');
     if (!projectsContainer) return;
 
-    try {
-        const response = await fetch('./data/projects.json');
-        if (!response.ok) throw new Error('Failed to load projects');
-
-        const projects = await response.json();
-
-        projectsContainer.innerHTML = projects.map(project => `
-            <div class="project-card fade-in">
-                <div class="project-content">
-                    <h3 class="project-title">${project.title}</h3>
-                    <p class="project-desc">${project.description}</p>
-                    <div class="project-tags">
-                        ${project.concepts.map(concept => `<span class="tag">${concept}</span>`).join('')}
-                    </div>
+    projectsContainer.innerHTML = projectData.map(project => `
+        <div class="project-card fade-in">
+            <div class="project-content">
+                <h3 class="project-title">${project.title}</h3>
+                <p class="project-desc">${project.description}</p>
+                <div class="project-tags">
+                    ${project.concepts.map(concept => `<span class="tag">${concept}</span>`).join('')}
                 </div>
             </div>
-        `).join('');
+        </div>
+    `).join('');
 
-        // Re-trigger animation setup for new elements
-        setupScrollAnimations();
-
-    } catch (error) {
-        console.error('Error:', error);
-        projectsContainer.innerHTML = '<p>Unable to load projects at this time.</p>';
-    }
+    // Re-trigger animation setup for new elements
+    setupScrollAnimations();
 }
 
 function setupScrollAnimations() {
