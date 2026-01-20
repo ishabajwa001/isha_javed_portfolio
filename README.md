@@ -17,6 +17,12 @@ A sophisticated visual identity using a deep forest green and sand-beige palette
 
 ---
 
+## 🚀 Live Demo
+Experience the live portfolio at:  
+👉 **[ishajaved-portfolio.netlify.app](https://ishajaved-portfolio.netlify.app)**
+
+---
+
 ## 📂 Project Architecture
 
 The project is structured for high performance and zero-dependency operation:
